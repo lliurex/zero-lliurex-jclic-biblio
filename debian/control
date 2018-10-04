@@ -1,0 +1,20 @@
+Source: zero-lliurex-jclic-biblio
+Section: admin
+Priority: optional
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Uploaders: Angel Berlanas Vicente <lliurex_devel2@edu.gva.es>, Raul Rodrigo Segura <lliurex_devel3@edu.gva.es>, David Montalva Furio <montalva_dav@gva.es>, Alfons Lloret Sananton <lliurex_devel5@edu.gva.es>, Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>, Hector Garcia Huerta <lliurex_devel1@edu.gva.es>, Jose Carlos Garcia Monsalvez <garcia_josmon@gva.es>, Jose Alfredo Murcia Andres <murcia_josand@gva.es>, Jaime Munyoz Fayos <munyoz_jaifay@gva.es>, Miguel Garcia Gomez <garcia_miggom@gva.es>
+XS-Python-Version: current, >= 2.5
+Build-Depends: llxsrchelper,debhelper (>= 7.0.50~), zero-dev, llxcfg-dev (>=1:10.09.17), librsvg2-bin
+Standards-Version: 3.9.3
+
+Package: zero-lliurex-jclic-biblio
+Architecture: all
+Depends: lliurex-common-utils (>= 0.3.9), ${misc:Depends}, llxcfg-runtime, epi-gtk
+Conflicts: lliurex-jclic-biblioteca-installer,zero-lliurex-jclic-biblio-installer
+Provides: lliurex-jclic-biblioteca-installer,zero-lliurex-jclic-biblio-installer
+Replaces: lliurex-jclic-biblioteca-installer,zero-lliurex-jclic-biblio-installer (<=0.4.2)
+Breaks: lliurex-jclic-biblioteca-installer,zero-lliurex-jclic-biblio-installer (<=0.4.2)
+Description: JCLIC Library Installer
+ Installer for JCLIC libraries
+ from zero center
+
