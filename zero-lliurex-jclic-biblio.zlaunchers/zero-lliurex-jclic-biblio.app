@@ -15,4 +15,4 @@ Groups=adm;admins;teachers
 Service=False
 Modal=True
 Gnome-terminal=True 
-Using=pe
+Using=pkexec
