@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="desktop-application">
+<id>zero-lliurex-jclic-biblio</id>
+<metadata_license>CC0-1.0</metadata_license>
+<name>zero-lliurex-jclic-biblio</name>
+<name xml:lang="es">Descargar las bibliotecas de JClic</name>
+<name xml:lang="ca_ES.UTF-8@valencia">Baixar les biblioteques de JClic</name>
+<name xml:lang="ca_ES@valencia">Baixa les biblioteques de JClic</name>
+<name xml:lang="ca_ES">Baixa les biblioteques de JClic</name>
+<name xml:lang="en">JClic libraries downloader</name>
+<summary>JClic Libraries downloader</summary>
+<summary xml:lang="es">Descargar las bibliotecas de JClic</summary>
+<summary xml:lang="ca_ES.UTF-8@valencia">Baixar les biblioteques de JClic</summary>
+<summary xml:lang="ca_ES@valencia">Baixar les biblioteques de JClic</summary>
+<summary xml:lang="ca_ES">Baixar les biblioteques de JClic</summary>
+<summary xml:lang="en">JClic Libraries downloader</summary>
+<description>
+<p>JClic Libraries downloader</p>
+<p xml:lang="es">Descargar las bibliotecas de JClic</p>
+<p xml:lang="ca_ES.UTF-8@valencia">Baixar les biblioteques de JClic</p>
+<p xml:lang="ca_ES@valencia">Baixar les biblioteques de JClic</p>
+<p xml:lang="ca_ES">Baixar les biblioteques de JClic</p>
+<p xml:lang="en">JClic Libraries downloader</p>
+</description>
+<categories>
+<category>Lliurex</category>
+<category>Zomando</category>
+<category>Utility</category>
+</categories>
+<icon type="cached">jclic_libraries</icon>
+
+<keywords>
+<keyword>zero</keyword>
+<keyword>lliurex</keyword>
+<keyword>jclic</keyword>
+<keyword>biblio</keyword>
+<keyword>zero-lliurex-jclic-biblio</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="es">
+<keyword>Descargar</keyword>
+<keyword>las</keyword>
+<keyword>bibliotecas</keyword>
+<keyword>JClic</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES.UTF-8@valencia">
+<keyword>Baixar</keyword>
+<keyword>les</keyword>
+<keyword>biblioteques</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="ca_ES@valencia">
+<keyword>Baixa</keyword>
+<keyword>Zomando</keyword>
+</keywords>
+<keywords xml:lang="en">
+<keyword>libraries</keyword>
+<keyword>downloader</keyword>
+<keyword>Zomando</keyword>
+
+</keywords>
+</component>

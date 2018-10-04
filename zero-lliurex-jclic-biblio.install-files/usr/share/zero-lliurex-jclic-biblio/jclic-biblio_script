@@ -1,0 +1,186 @@
+#!/bin/bash
+
+
+############################################
+ACTION="$1"
+PKG="$2"
+
+USERHOME=$(getent passwd $USER | cut -f6 -d ':')
+CLIENT_N4D_VARS="/var/lib/n4d/variables-dir/REMOTE_VARIABLES_SERVER"
+CLIENT_BASE_DIR="/JClic/projects"
+CLIENT_JCLIC_DIR="/JClic"
+SERVER_BASE_DIR="/net/server-sync/share/jclic-aula/jclic_uploads"
+SERVER_N4D_VARS="/var/lib/n4d/variables-dir/LDAP_BASE_DN"
+TEUMESTRE="elteumestre_JClic_Infantil_Primaria_17"
+
+IMAGENES_EL_TEU="http://www.lliurex.net/recursos/"
+PACK_EL_TEU="elteumestre_JClic_Infantil_Primaria_17.zip"
+DESTDOWNLOAD="/var/cache/epi-downloads"
+
+TDESKTOP=0
+TSERVER=1
+TCLIENT=2
+
+###########################################
+
+
+lliurex-version -t client
+
+if [ "$?" == 0 ];then
+	TYPE=$TCLIENT
+
+else
+	lliurex-version -t desktop	
+
+	if [ "$?" == 0 ];then
+		TYPE=$TDESKTOP
+	else
+		TYPE=$TSERVER
+	fi	
+fi	
+
+
+if [ $TYPE == $TSERVER ];then
+	INSTALL_DIR=$SERVER_BASE_DIR
+else	
+	INSTALL_DIR=$USERHOME$CLIENT_BASE_DIR
+fi	
+
+PATH_INSTALLED=$INSTALL_DIR/$TEUMESTRE
+
+case $ACTION in
+
+	getStatus)
+		case $PKG in
+			elteumestre_JClic)
+				
+				if [ -d ${PATH_INSTALLED} ]; then
+					echo 0
+				else
+					echo 1
+				fi
+			;;
+		esac						
+				
+	;;
+
+
+	preInstall)
+
+		echo "Checking downloaded file..."
+		
+		LANGUAGE=en wget --spider -o /tmp/jclic_length.log "$IMAGENES_EL_TEU""$PACK_EL_TEU"
+		LENGTH_ORIG=$( cat /tmp/jclic_length.log | grep Length | awk '{print $2}' )
+		LENGTH_DOWNLOAD=$( ls -l $DESTDOWNLOAD/$PACK_EL_TEU 2>/dev/null  | awk '{print $5}' )
+
+		if [ "$LENGTH_ORIG" != "$LENGTH_DOWNLOAD" ]; then
+
+			echo "Downloaded file is not valid"
+			exit 1
+
+		fi	
+		
+	;;
+	
+	installPackage)
+
+	
+		echo "Checking downloaded file extension..."
+
+		EXT=$( ls $DESTDOWNLOAD/$PACK_EL_TEU | rev | cut -d "." -f 1 | rev )	
+
+		if [ "$EXT" != "zip" ] && [ "$EXT" != "gz" ]; then
+			echo "Downloaded file extension is not correct. Jclic needs zip or tar extension and file downloaded has $EXT extension"
+			exit 1
+		
+		else
+			if [ ! -d "$INSTALL_DIR" ]; then
+				echo "Creating directory for install JClic biblio..."
+				mkdir -p "$INSTALL_DIR"
+			else
+				if [ -d "$PATH_INSTALLED" ]; then
+					echo "Jclic biblio already exists. It is deleted to reinstall..."	
+					rm -R $PATH_INSTALLED
+				fi	
+		
+			fi
+
+			echo "Uncompresing JClic biblio..."
+			case $EXT in
+
+				"zip")
+					
+					unzip $DESTDOWNLOAD/$PACK_EL_TEU -d "$INSTALL_DIR" 
+
+					# Error code 2 is generic error, processing may have completed successfully
+					result=$?
+					if [ "$result" != 0 ];then
+						if  [ "$result" != 2 ];then
+							echo "Jclic biblio cannot be installed in your system, because the uncompressing fail"
+							exit 1
+						fi	
+							
+					fi
+					
+
+					if [ -d "$PATH_INSTALLED" ]; then
+						chmod -R 755 $INSTALL_DIR
+						if [ $TYPE != 1 ];then
+							USER_GR=$(id -g -n ${USER})
+							chown -R ${USER}:${USER_GR} $USERHOME/$CLIENT_JCLIC_DIR
+						fi	
+					else
+						echo "Jclic biblio cannot be installed in your system, because the uncompressing fail"
+						exit 1
+					fi		
+
+				;;
+
+				"gz")
+					tar -xvf $DESTDOWNLOAD/$PACK_EL_TEU -C "$INSTALL_DIR"
+					
+					if [ "$?" != 0 ];then
+						echo "Jclic biblio cannot be installed in your system, because the uncompressing fail"
+						exit 1
+					fi
+
+					
+					if [ -d "$PATH_INSTALLED" ]; then
+						chmod -R 755 $INSTALL_DIR
+						if [ $TYPE != 1 ];then
+							USER_GR=$(id -g -n ${USER})
+							chown -R ${USER}:${USER_GR} $USERHOME/$CLIENT_JCLIC_DIR
+						fi	
+					else
+						echo "Jclic biblio cannot be installed in your system, because the uncompressing fail"
+						exit 1
+					fi		
+				;;
+
+			esac
+			
+		fi
+	;;	
+
+	remove)
+
+
+		if [ -d "$PATH_INSTALLED" ]; then
+			echo "Removing Jclic biblio..."	
+			rm -R $PATH_INSTALLED
+		fi	
+		
+		if [ "$?" != 0 ];then
+			echo "Unable to remove Jclic biblio..."
+			exit 1
+		fi
+
+	;;			
+esac
+
+exit 0
+					
+
+
+
+
