@@ -1,3 +1,9 @@
+zero-lliurex-jclic-biblio (0.10) bionic; urgency=medium
+
+  * Initial release to bionic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 04 Oct 2018 12:42:57 +0200
+
 zero-lliurex-jclic-biblio (0.9.1) xenial; urgency=medium
 
   * Fixed jclic-biblio_script
