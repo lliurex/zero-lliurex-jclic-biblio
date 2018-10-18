@@ -5,7 +5,8 @@
 ACTION="$1"
 PKG="$2"
 
-USERHOME=$(getent passwd $USER | cut -f6 -d ':')
+MUSER=$(getent passwd | grep x:$PKEXEC_UID: | cut -d ":" -f 1)
+USERHOME=$(getent passwd $MUSER | cut -f6 -d ':')
 CLIENT_N4D_VARS="/var/lib/n4d/variables-dir/REMOTE_VARIABLES_SERVER"
 CLIENT_BASE_DIR="/JClic/projects"
 CLIENT_JCLIC_DIR="/JClic"
@@ -126,8 +127,8 @@ case $ACTION in
 					if [ -d "$PATH_INSTALLED" ]; then
 						chmod -R 755 $INSTALL_DIR
 						if [ $TYPE != 1 ];then
-							USER_GR=$(id -g -n ${USER})
-							chown -R ${USER}:${USER_GR} $USERHOME/$CLIENT_JCLIC_DIR
+							USER_GR=$(id -g -n ${MUSER})
+							chown -R ${MUSER}:${USER_GR} $USERHOME/$CLIENT_JCLIC_DIR
 						fi	
 					else
 						echo "Jclic biblio cannot be installed in your system, because the uncompressing fail"
@@ -148,8 +149,8 @@ case $ACTION in
 					if [ -d "$PATH_INSTALLED" ]; then
 						chmod -R 755 $INSTALL_DIR
 						if [ $TYPE != 1 ];then
-							USER_GR=$(id -g -n ${USER})
-							chown -R ${USER}:${USER_GR} $USERHOME/$CLIENT_JCLIC_DIR
+							USER_GR=$(id -g -n ${MUSER})
+							chown -R ${MUSER}:${USER_GR} $USERHOME/$CLIENT_JCLIC_DIR
 						fi	
 					else
 						echo "Jclic biblio cannot be installed in your system, because the uncompressing fail"
