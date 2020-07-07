@@ -1,3 +1,9 @@
+zero-lliurex-jclic-biblio (0.13) bionic; urgency=medium
+
+  * Added custom icon to show in epi
+   
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 07 Jul 2020 11:07:03 +0200
+
 zero-lliurex-jclic-biblio (0.12) bionic; urgency=medium
 
   * Changed adm group by sudo 
