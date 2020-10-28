@@ -15,7 +15,7 @@ SERVER_N4D_VARS="/var/lib/n4d/variables-dir/LDAP_BASE_DN"
 TEUMESTRE="elteumestre_JClic_Infantil_Primaria_18"
 
 IMAGENES_EL_TEU="http://www.lliurex.net/recursos/"
-PACK_EL_TEU="elteumestre_JClic_Infantil_Primaria_17.zip"
+PACK_EL_TEU="elteumestre_JClic_Infantil_Primaria_18.1.zip"
 DESTDOWNLOAD="/var/cache/epi-downloads"
 
 TDESKTOP=0
