@@ -12,7 +12,7 @@ CLIENT_BASE_DIR="/JClic/projects"
 CLIENT_JCLIC_DIR="/JClic"
 SERVER_BASE_DIR="/net/server-sync/share/jclic-aula/jclic_uploads"
 SERVER_N4D_VARS="/var/lib/n4d/variables-dir/LDAP_BASE_DN"
-TEUMESTRE="elteumestre_JClic_Infantil_Primaria_17"
+TEUMESTRE="elteumestre_JClic_Infantil_Primaria_18"
 
 IMAGENES_EL_TEU="http://www.lliurex.net/recursos/"
 PACK_EL_TEU="elteumestre_JClic_Infantil_Primaria_17.zip"
@@ -153,7 +153,7 @@ case $ACTION in
 							chown -R ${MUSER}:${USER_GR} $USERHOME/$CLIENT_JCLIC_DIR
 						fi	
 					else
-						echo "Jclic biblio cannot be installed in your system, because the uncompressing fail"
+						echo "Jclic biblio cannot be installed in your system, because the folder has any problem"
 						exit 1
 					fi		
 				;;
