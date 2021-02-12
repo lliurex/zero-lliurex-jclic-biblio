@@ -9,7 +9,7 @@ Standards-Version: 4.1.2
 
 Package: zero-lliurex-jclic-biblio
 Architecture: all
-Depends: lliurex-common-utils (>= 0.3.9), ${misc:Depends},epi-gtk
+Depends: ${misc:Depends},epi-gtk
 Description: JCLIC Library Installer
  Installer for JCLIC libraries
  from zero center
