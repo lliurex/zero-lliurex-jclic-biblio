@@ -1,10 +1,12 @@
 Name=zero-lliurex-jclic-biblio
 Name[es]=Descargar las bibliotecas de JClic
+Name[ca@valencia]=Baixar les biblioteques de JClic
 Name[qcv]=Baixar les biblioteques de JClic
 Name[ca_ES@valencia]=Baixa les biblioteques de JClic
 Name[en]=JClic libraries downloader
 Comment=JClic Libraries downloader
 Comment[es]=Descargar las bibliotecas de JClic
+Comment[ca@valencia]=Baixar les biblioteques de JClic
 Comment[qcv]=Baixar les biblioteques de JClic
 Comment[ca_ES@valencia]=Baixar les biblioteques de JClic
 Comment[en]=JClic Libraries downloader
