@@ -1,3 +1,9 @@
+zero-lliurex-jclic-biblio (0.14.1) bionic-updates; urgency=medium
+
+  * Added custom name in epi file
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 16 Jun 2021 14:44:27 +0200
+
 zero-lliurex-jclic-biblio (0.14) bionic; urgency=medium
 
   * Adding new version to Mestre a casa 18.1 
