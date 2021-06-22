@@ -1,3 +1,9 @@
+zero-lliurex-jclic-biblio (0.24.4) focal; urgency=medium
+
+  * Change value of service key in app file
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 22 Jun 2021 13:46:00 +0200
+
 zero-lliurex-jclic-biblio (0.24.3) focal; urgency=medium
 
   * Added custom name in epi file
