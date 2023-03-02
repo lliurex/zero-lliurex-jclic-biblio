@@ -1,3 +1,9 @@
+zero-lliurex-jclic-biblio (0.24.5) focal; urgency=medium
+
+  * removing www from url
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 02 Mar 2023 11:47:04 +0100
+
 zero-lliurex-jclic-biblio (0.24.4) focal; urgency=medium
 
   * Change value of service key in app file
