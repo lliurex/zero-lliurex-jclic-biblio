@@ -1,6 +1,6 @@
 {
 	"type":"file",
-	"pkg_list": [{"name":"elteumestre_JClic","version":{"all":"elteumestre_JClic_Infantil_Primaria_18.1.zip"},"key_store":"zero-lliurex-jclic-biblio","url_download":"http://www.lliurex.net/recursos/","custom_icon":"jclic.svg","custom_name":"JClic resources: elteumestre"}], 
+	"pkg_list": [{"name":"elteumestre_JClic","version":{"all":"elteumestre_JClic_Infantil_Primaria_18.1.zip"},"key_store":"zero-lliurex-jclic-biblio","url_download":"http://lliurex.net/recursos/","custom_icon":"jclic.svg","custom_name":"JClic resources: elteumestre"}], 
 	"script": {"name":"/usr/share/zero-lliurex-jclic-biblio/jclic-biblio_script","remove":true,"getStatus":true},
 	"required_root":true,
 	"custom_icon_path":"/usr/share/icons/lliurex/apps/48/",
