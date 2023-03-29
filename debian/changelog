@@ -1,3 +1,10 @@
+zero-lliurex-jclic-biblio (0.24.6) focal; urgency=medium
+
+  * Fixed script to install in macrolan
+  * Fixed script to install in desktop with epic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 29 Mar 2023 16:49:57 +0200
+
 zero-lliurex-jclic-biblio (0.24.5) focal; urgency=medium
 
   * removing www from url
