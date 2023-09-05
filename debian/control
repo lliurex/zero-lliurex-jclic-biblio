@@ -1,0 +1,16 @@
+Source: zero-lliurex-jclic-biblio
+Section: admin
+Priority: optional
+Maintainer: Equipo LliureX <lliurex@gva.es>
+Uploaders: Equipo LliureX <lliurex@gva.es>
+XS-Python-Version: current, >= 2.5
+Build-Depends: llxsrchelper,debhelper (>= 10), zero-dev
+Standards-Version: 4.1.2
+
+Package: zero-lliurex-jclic-biblio
+Architecture: all
+Depends: ${misc:Depends},epi-gtk
+Description: JCLIC Library Installer
+ Installer for JCLIC libraries
+ from zero center
+

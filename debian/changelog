@@ -1,0 +1,225 @@
+zero-lliurex-jclic-biblio (0.24.6) focal; urgency=medium
+
+  * Fixed script to install in macrolan
+  * Fixed script to install in desktop with epic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 29 Mar 2023 16:49:57 +0200
+
+zero-lliurex-jclic-biblio (0.24.5) focal; urgency=medium
+
+  * removing www from url
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Thu, 02 Mar 2023 11:47:04 +0100
+
+zero-lliurex-jclic-biblio (0.24.4) focal; urgency=medium
+
+  * Change value of service key in app file
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 22 Jun 2021 13:46:00 +0200
+
+zero-lliurex-jclic-biblio (0.24.3) focal; urgency=medium
+
+  * Added custom name in epi file
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 16 Jun 2021 14:41:54 +0200
+
+zero-lliurex-jclic-biblio (0.24.2) focal; urgency=medium
+
+  * Fixed zero app file
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 25 May 2021 18:03:40 +0200
+
+zero-lliurex-jclic-biblio (0.24.1) focal; urgency=medium
+
+  * Remove old dependency
+
+ -- Raul Rodrigo Segura <raurodse@gmail.com>  Fri, 12 Feb 2021 18:50:49 +0100
+
+zero-lliurex-jclic-biblio (0.24) focal; urgency=medium
+
+  * Initial release for focal
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 12 Feb 2021 12:07:21 +0100
+
+zero-lliurex-jclic-biblio (0.14) bionic; urgency=medium
+
+  * Adding new version to Mestre a casa 18.1 
+
+ -- Daniel Duran <daduve@gmail.com>  Wed, 28 Oct 2020 15:57:43 +0100
+
+zero-lliurex-jclic-biblio (0.13) bionic; urgency=medium
+
+  * Added custom icon to show in epi
+   
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 07 Jul 2020 11:07:03 +0200
+
+zero-lliurex-jclic-biblio (0.12) bionic; urgency=medium
+
+  * Changed adm group by sudo 
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 05 Mar 2019 15:29:48 +0100
+
+zero-lliurex-jclic-biblio (0.11) bionic; urgency=medium
+
+  * Fixed epi script to use pkexec
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 18 Oct 2018 12:22:03 +0200
+
+zero-lliurex-jclic-biblio (0.10) bionic; urgency=medium
+
+  * Initial release to bionic
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 04 Oct 2018 12:42:57 +0200
+
+zero-lliurex-jclic-biblio (0.9.1) xenial; urgency=medium
+
+  * Fixed jclic-biblio_script
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 17 May 2018 08:18:00 +0200
+
+zero-lliurex-jclic-biblio (0.9) xenial; urgency=medium
+
+  * Implemented changes to use EPI
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 16 May 2018 13:16:54 +0200
+
+zero-lliurex-jclic-biblio (0.8) xenial; urgency=high
+
+  * Changing downloading protocol to zero-lliurex-wget 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Fri, 15 Sep 2017 14:40:24 +0200
+
+zero-lliurex-jclic-biblio (0.7) xenial; urgency=medium
+
+  * Change path to dowload and setup library (jclic_uploads)
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 03 Aug 2017 12:27:00 +0200
+
+zero-lliurex-jclic-biblio (0.6) xenial; urgency=medium
+
+  * Updated elteumestre library to version 17
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 07 Jul 2017 08:56:40 +0200
+
+zero-lliurex-jclic-biblio (0.5-lliurex3) xenial; urgency=medium
+
+  * Removed deprecated locale
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Thu, 22 Jun 2017 09:22:12 +0200
+
+zero-lliurex-jclic-biblio (0.5-lliurex2) xenial; urgency=medium
+
+  * Fixed icon path in fake zmd desktop
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Wed, 31 May 2017 11:56:05 +0200
+
+zero-lliurex-jclic-biblio (0.5-lliurex1) xenial; urgency=medium
+
+  * Added metainfo 
+
+ -- Juanma Navarro Mañez <juanma1980@gmail.com>  Tue, 30 May 2017 12:38:25 +0200
+
+zero-lliurex-jclic-biblio (0.5) xenial; urgency=medium
+
+  * Rename to zero-lliurex-jclic-biblio
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 15 Feb 2017 16:56:09 +0100
+
+zero-lliurex-jclic-biblio-installer (0.4.2) xenial; urgency=medium
+
+  * Fixed depends (llxcfg-runtime)
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 08 Feb 2016 09:30:52 +0100
+
+zero-lliurex-jclic-biblio-installer (0.4.1) xenial; urgency=medium
+
+  * Updated dependes (python-llxnet)
+  * Fix require version of Gtk and PandCairo (zero-lliurex-jclic-biblio-setup)
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Thu, 04 Feb 2016 10:34:16 +0100
+
+zero-lliurex-jclic-biblio-installer (0.4) xenial; urgency=medium
+
+  * First release to xenial
+
+ -- Juan Ramon Pelegrina  <juapesai@hotmail.com>  Thu, 04 Feb 2016 09:17:51 +0100
+
+zero-lliurex-jclic-biblio-installer (0.37) trusty; urgency=high
+
+  * Bug in Murcia directory in jclic, name has blank spaces 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 19 Oct 2015 16:12:43 +0200
+
+zero-lliurex-jclic-biblio-installer (0.36) trusty; urgency=high
+
+  * fix name error 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 27 Apr 2015 12:42:51 +0200
+
+zero-lliurex-jclic-biblio-installer (0.35) trusty; urgency=high
+
+  * Fix tmp permissions in untar 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 27 Apr 2015 11:46:41 +0200
+
+zero-lliurex-jclic-biblio-installer (0.34) trusty; urgency=high
+
+  * Fix bug for ratoli.zip uncompressed in jclic, now is in ratoli
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 27 Apr 2015 09:28:17 +0200
+
+zero-lliurex-jclic-biblio-installer (0.33) trusty; urgency=high
+
+  * Add zenity progress to rm directory
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Thu, 23 Apr 2015 10:10:24 +0200
+
+zero-lliurex-jclic-biblio-installer (0.32) trusty; urgency=high
+
+  * Modify echoes 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 16 Mar 2015 13:21:38 +0100
+
+zero-lliurex-jclic-biblio-installer (0.31) trusty; urgency=high
+
+  * Adding support blank spaces 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 16 Mar 2015 12:16:48 +0100
+
+zero-lliurex-jclic-biblio-installer (0.30) trusty; urgency=high
+
+  * Updated install/remove scripts & frontend with Hector Garcia
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 16 Mar 2015 11:24:36 +0100
+
+zero-lliurex-jclic-biblio-installer (0.29) trusty; urgency=high
+
+  * Updated script
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Thu, 12 Mar 2015 14:30:43 +0100
+
+zero-lliurex-jclic-biblio-installer (0.28) trusty; urgency=medium
+
+  * Upgrading changelog 
+
+ -- Daniel Duran Vecino <daduve@gmail.com>  Mon, 19 Jan 2015 16:53:34 +0100
+
+zero-lliurex-jclic-biblio-installer (0.27) precise; urgency=low
+
+  * Banner rendered from svg source
+
+ -- Enrique Medina Gremaldos <lliurex_devel4@edu.gva.es>  Tue, 17 Jun 2014 13:22:47 +0200
+
+zero-lliurex-jclic-biblio-installer (0.26) precise; urgency=high
+
+  * Updated to platinum
+  * Updated dependences
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Thu, 08 May 2014 13:04:42 +0200
+
+zero-lliurex-jclic-biblio-installer (0.24) precise; urgency=high
+
+  * First release for platinum
+  * New version for new zero center grouping all the libraries
+
+ -- Angel Berlanas Vicente <angel.berlanas@gmail.com>  Mon, 09 Dec 2013 11:43:24 +0100
