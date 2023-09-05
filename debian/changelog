@@ -1,3 +1,9 @@
+zero-lliurex-jclic-biblio (0.34.6) jammy; urgency=medium
+
+  * Initial release for Jammy
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 05 Sep 2023 14:42:41 +0200
+
 zero-lliurex-jclic-biblio (0.24.6) focal; urgency=medium
 
   * Fixed script to install in macrolan
