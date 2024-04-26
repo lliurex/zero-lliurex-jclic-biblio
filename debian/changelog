@@ -1,3 +1,10 @@
+zero-lliurex-jclic-biblio (0.24.7) focal; urgency=medium
+
+  * Fixed installation with CDC user
+  * Enable installation to students
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 26 Apr 2024 13:10:53 +0200
+
 zero-lliurex-jclic-biblio (0.24.6) focal; urgency=medium
 
   * Fixed script to install in macrolan
