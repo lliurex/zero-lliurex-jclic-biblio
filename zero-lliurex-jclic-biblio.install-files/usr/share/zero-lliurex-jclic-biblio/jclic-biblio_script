@@ -25,6 +25,10 @@ LENGTH_ORIG="3684477905"
 PACK_EL_TEU="elteumestre_JClic_Infantil_Primaria_18.1.zip"
 DESTDOWNLOAD="/var/cache/epi-downloads"
 
+JCLIC_PROFILE="llx_jclic.sh"
+ETC_PROFILE="/etc/profile.d/"
+JCLIC_PROFILE_DIR="/usr/share/zero-lliurex-jclic-biblio/$JCLIC_PROFILE"
+
 TDESKTOP=0
 TSERVER=1
 TCLIENT=2
@@ -177,6 +181,18 @@ case $ACTION in
 				esac
 				
 			fi
+
+			#GENERATE PROFILE FILE TO LINK IN HOME
+			if [ -f "$ETC_PROFILE$JCLIC_PROFILE" ]; then
+				echo "Removing OLD Jclic profile link..."	
+				rm -R $ETC_PROFILE$JCLIC_PROFILE
+			fi
+
+			if [ -f "$JCLIC_PROFILE_DIR" ]; then
+				echo "Generating Jclic profile link..."	
+				cp $JCLIC_PROFILE_DIR $ETC_PROFILE
+			fi	
+
 		#fi
 	;;	
 
@@ -192,6 +208,12 @@ case $ACTION in
 			echo "Unable to remove Jclic biblio..."
 			exit 1
 		fi
+
+		#Remove script to generate link in home
+		if [ -f "$ETC_PROFILE$JCLIC_PROFILE" ]; then
+			echo "Removing Jclic profile link..."	
+			rm -R $ETC_PROFILE$JCLIC_PROFILE
+		fi	
 
 	;;			
 esac
