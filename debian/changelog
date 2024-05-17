@@ -1,3 +1,9 @@
+zero-lliurex-jclic-biblio (0.25.0) focal; urgency=medium
+
+  * Adding profile scritp to generate link in home.
+
+ -- Daniel Duran <daduve@gmail.com>  Fri, 17 May 2024 09:38:45 +0200
+
 zero-lliurex-jclic-biblio (0.24.7) focal; urgency=medium
 
   * Fixed installation with CDC user
