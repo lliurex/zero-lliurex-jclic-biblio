@@ -1,3 +1,9 @@
+zero-lliurex-jclic-biblio (0.35.1) jammy; urgency=medium
+
+  * New advertise timeout 
+
+ -- Daniel Duran <daduve@gmail.com>  Tue, 21 May 2024 14:27:52 +0200
+
 zero-lliurex-jclic-biblio (0.35.0) jammy; urgency=medium
 
   * Adding Profile file to generate link in user home.
