@@ -1,3 +1,9 @@
+zero-lliurex-jclic-biblio (0.25.1) focal; urgency=medium
+
+  * New advertise timeout 
+
+ -- Daniel Duran <daduve@gmail.com>  Tue, 21 May 2024 14:28:44 +0200
+
 zero-lliurex-jclic-biblio (0.25.0) focal; urgency=medium
 
   * Adding profile scritp to generate link in home.
