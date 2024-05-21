@@ -193,7 +193,13 @@ case $ACTION in
 				cp $JCLIC_PROFILE_DIR $ETC_PROFILE
 			fi
 
-			kdialog --sorry "Debes de reiniciar la sesión para acceder a la biblioteca."
+			#kdialog --sorry "Debes de reiniciar la sesión para acceder a la biblioteca."
+			echo ""
+			echo "----------------------------------------------------------------"
+			echo "Debes de reiniciar la sesión para acceder a la biblioteca."
+			echo "----------------------------------------------------------------"
+			echo ""
+			kdialog --title "AVISO" --passivepopup "Debes de reiniciar la sesión para acceder a la biblioteca." 20
 
 		#fi
 	;;	
