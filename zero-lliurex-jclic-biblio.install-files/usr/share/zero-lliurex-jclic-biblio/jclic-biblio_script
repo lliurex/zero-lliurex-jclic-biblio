@@ -191,7 +191,9 @@ case $ACTION in
 			if [ -f "$JCLIC_PROFILE_DIR" ]; then
 				echo "Generating Jclic profile link..."	
 				cp $JCLIC_PROFILE_DIR $ETC_PROFILE
-			fi	
+			fi
+
+			kdialog --sorry "Debes de reiniciar la sesión para acceder a la biblioteca."
 
 		#fi
 	;;	
