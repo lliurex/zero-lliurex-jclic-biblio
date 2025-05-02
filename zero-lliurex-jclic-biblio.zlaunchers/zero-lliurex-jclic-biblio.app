@@ -18,3 +18,4 @@ Service=True
 Modal=True
 Gnome-terminal=True 
 Using=pkexec
+Show=False
