@@ -35,6 +35,19 @@ TCLIENT=2
 
 ###########################################
 
+function getMsg {
+
+	if [[ $LANG == *"valencia"* ]];then
+		msgBox="Ha de reiniciar la sessió per a accedir a la biblioteca"
+	elif [[ $LANG == *"es"* ]];then
+		msgBox="Debe reiniciar la sesión para acceder a la biblioteca"
+	elif [[ $LANG == *"en"* ]];then
+		msgBox="You must log in again to access the library"
+	fi
+
+	echo "$msgBox"
+
+}
 
 lliurex-version -t client
 
@@ -194,12 +207,14 @@ case $ACTION in
 			fi
 
 			#kdialog --sorry "Debes de reiniciar la sesión para acceder a la biblioteca."
+			msgBox=$(getMsg)
+
 			echo ""
 			echo "----------------------------------------------------------------"
-			echo "Debes de reiniciar la sesión para acceder a la biblioteca."
+			echo "You must log in again to access the library"
 			echo "----------------------------------------------------------------"
 			echo ""
-			kdialog --title "AVISO" --passivepopup "Debes de reiniciar la sesión para acceder a la biblioteca." 20
+			kdialog --title "AVISO" --msgbox "$msgBox" || true
 
 		#fi
 	;;	
